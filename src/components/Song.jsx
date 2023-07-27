@@ -3,7 +3,7 @@ export const Song = ({fn,song}) =>{
     console.log(song);
     const [playerFlag, setPlayerFlag] = useState(false);
     const showPlayer = ()=>{
-        fn(true);
+        fn(true, song);
     }
     return (<div className="row">
     <div className="col-4">
