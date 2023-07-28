@@ -1,16 +1,21 @@
 
-export const Player = ({song})=>{
+export const Player = ({fn, song})=>{
     console.log('Song object rec', song);
 return (
 <div>
-<button className= 'btn btn-success'>Back to Songs</button>
+<button onClick={()=>{
+    fn(false, null);
+}} className = 'btn btn-success'>Back to Songs</button>
+
 <p>
+<img src = {song.artworkUrl100}/>
+<br/>
 {song?.artistName} {song?.trackName}
 </p>
 <br/>
 <br/>
 <audio controls>
-    <source scr={song?.previewUrl} type="audio/mp4"/>
+    <source src = {song?.previewUrl} type="audio/mp4"/>
     Your browser does not support the audio element
 </audio>
 </div>)

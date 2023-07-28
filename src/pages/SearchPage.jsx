@@ -31,7 +31,7 @@ export const SearchPage = () =>{
         <div className="container">
         <h1 className="alert alert-info text-center">Music Store</h1>
     
-    {flag?<Player song = {song}/>:jsx}
+    {flag?<Player fn = {togglePlayer} song = {song}/>:jsx}
     
     </div>);
 }
