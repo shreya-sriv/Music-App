@@ -8,7 +8,8 @@ return (
 }} className = 'btn btn-success'>Back to Songs</button>
 
 <p>
-<img src = {song.artworkUrl100}/>
+<img src = {song.artworkUrl100} className="rounded-circle"/>
+<br/>
 <br/>
 {song?.artistName} {song?.trackName}
 </p>

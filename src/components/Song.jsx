@@ -6,13 +6,13 @@ export const Song = ({fn,song}) =>{
         fn(true, song);
     }
     return (<div className="row">
-    <div className="col-4">
-        <img src = {song.artworkUrl100}/>
+    <div className="col-sm-4">
+        <img src = {song.artworkUrl100} className='rounded-circle'/>
     </div>
-    <div className="col-4">
+    <div className="col-sm-4">
     {song.artistName} {song.trackName}
     </div>
-    <div className="col-4">
+    <div className="col-sm-4">
         <button onClick = {showPlayer} className="btn btn-primary">Play Song</button>
     </div>
     </div>)
